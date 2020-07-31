@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    tools:context=".StuActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="165dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/cms" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Candidate Details"
+        android:layout_marginTop="34dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="463dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            tools:ignore="MissingConstraints">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Student"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginLeft="0dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Reg No:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/regno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="id"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nametext"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Candidate Name:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="name"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/mailtext"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Age:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="age"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/depttext"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Phone:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="phone"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nmob"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Address:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="address"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nemail"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Qualification:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/qualification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="qualification"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/naddress"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Department:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/department"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="department"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+        <!--
+
+
+        <TextView
+            android:id="@+id/depttext"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/sdept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mailtext" />
+        <TextView
+            android:id="@+id/sdept"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="108dp"
+            android:text="dept"
+            android:textSize="18sp"
+            android:textStyle="italic|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/depttext"
+            app:layout_constraintTop_toBottomOf="@+id/semail" />
+
+
+
+       -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textview_back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Go Back?"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

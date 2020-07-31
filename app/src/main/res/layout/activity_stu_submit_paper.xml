@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cms.StuSubmitPaperActivity"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="401dp"
+        android:layout_height="198dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/cms" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="695dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cid"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/regno"
+            android:hint="Conference ID"
+            android:paddingLeft="2dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/pname"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/portal"
+            android:hint="PaperName"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="90dp"
+            android:text="Please attach the paper in pdf format
+            in your E-Mail app. Do not change the Subject and Message."
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/button_submitPaper"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:background="#2196F3"
+            android:text="Submit Paper"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Go Back?"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

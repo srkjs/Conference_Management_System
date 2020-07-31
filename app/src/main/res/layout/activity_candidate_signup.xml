@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cms.CandidateSignupActivity"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="401dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/cms" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="695dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/regno"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/regno"
+            android:hint="Candidate ID"
+            android:inputType="number"
+            android:paddingLeft="2dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/student"
+            android:hint="Name of Candidate"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/age"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/phone"
+            android:hint="Mobile Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/mail"
+            android:hint="E-mail ID"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/pass"
+            android:hint="Password"
+            android:inputType="textShortMessage|textVisiblePassword" />
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/address"
+            android:hint="Address"
+            android:inputType="textShortMessage" />
+
+        <EditText
+            android:id="@+id/qualification"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/qualification"
+            android:hint="Qualification"
+            android:inputType="textShortMessage" />
+
+        <EditText
+            android:id="@+id/department"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/dept"
+            android:hint="Department"
+            android:inputType="textShortMessage" />
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#2196F3"
+            android:text="Sign Up"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Go Back?"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

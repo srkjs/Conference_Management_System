@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StuSearchActivity">
+
+    <ImageView
+        android:layout_width="401dp"
+        android:layout_height="183dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/cms" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            tools:ignore="MissingConstraints">
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <EditText
+                    android:id="@+id/regno"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="170dp"
+                    android:background="#ffffff"
+                    android:drawableLeft="@drawable/username"
+                    android:hint="Name/Place"
+                    android:paddingLeft="2dp" />
+
+                <Button
+                    android:id="@+id/button_getDetails"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="170dp"
+                    android:background="#2196F3"
+                    android:text="Search Conference"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="50dp">
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nametext"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="30dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Conference ID:"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="id"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"  />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/mailtext"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Name :"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="cname"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/depttext"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Topic :"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/topic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="topic"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nmob"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Date :"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="date"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nemail"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="Place :"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:ellipsize="none"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="place"
+                    android:textColorHighlight="#151515"
+                    android:textColorLink="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toTopOf="@+id/semail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nametext"
+                    app:layout_constraintTop_toBottomOf="@+id/sid" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textview_back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Go Back?"
+        android:layout_marginTop="650dp"/>
+
+</FrameLayout>

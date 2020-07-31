@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cms.OrgActivity"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="401dp"
+        android:layout_height="257dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/org" />
+
+
+    <Button
+        android:id="@+id/button_addConference"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:text="Add Conference"/>
+
+
+
+    <Button
+        android:id="@+id/button_assignReviewer"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:text="Assign Reviewer"/>
+
+
+
+    <Button
+        android:id="@+id/button_viewReviews"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:text="View Reviews"/>
+
+    <Button
+        android:id="@+id/button_viewReg"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:text="View Registrations"/>
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:text="LOGOUT"/>
+
+</LinearLayout>
